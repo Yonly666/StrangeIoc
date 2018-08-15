@@ -1,0 +1,2 @@
+# StrangeIoc
+StrangeIoc  Learn note
