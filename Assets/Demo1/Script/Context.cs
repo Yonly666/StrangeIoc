@@ -18,6 +18,9 @@ namespace Demo1
         /// </summary>
         protected override void mapBindings()
         {
+            //manager
+            injectionBinder.Bind<AudioManager>().To<AudioManager>().ToSingleton();
+
             //model（自身与自身绑定？）
             injectionBinder.Bind<ScoreModel>().To<ScoreModel>().ToSingleton();
 

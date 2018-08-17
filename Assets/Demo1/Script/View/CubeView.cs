@@ -13,6 +13,9 @@ namespace Demo1
         [Inject]
         public IEventDispatcher dispatcher { get; set; }
 
+        [Inject]
+        public AudioManager audioManager { get; set; }
+
         private Text cubeText;
 
         public void Init()
@@ -30,6 +33,7 @@ namespace Demo1
         public void OnMouseDown()
         {
             Debug.Log("on mouse down");
+            audioManager.Play("1");
             //执行加分事件
             dispatcher.Dispatch(MediatorEvent.AddScore);
         }

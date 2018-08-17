@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7A0F9984-58B4-3790-9CC1-D06883114B0B}</ProjectGuid>
+    <ProjectGuid>{A9360C2D-2F0C-A782-220C-1EFC501402E9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Assembly-CSharp.dll</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -86,8 +86,11 @@
     <Compile Include="Assets\Demo1\Script\Command\UpdateScoreCommand.cs" />
     <Compile Include="Assets\Demo1\Script\Context.cs" />
     <Compile Include="Assets\Demo1\Script\ContextViewRoot.cs" />
+    <Compile Include="Assets\Demo1\Script\Manager\AudioManager.cs" />
     <Compile Include="Assets\Demo1\Script\Mediator\CubeMediator.cs" />
     <Compile Include="Assets\Demo1\Script\Mediator\MediatorEvent.cs" />
+    <Compile Include="Assets\Demo1\Script\Model\GameObjectPool.cs" />
+    <Compile Include="Assets\Demo1\Script\Model\GameObjectPoolList.cs" />
     <Compile Include="Assets\Demo1\Script\Model\ScoreModel.cs" />
     <Compile Include="Assets\Demo1\Script\Service\IScoreService.cs" />
     <Compile Include="Assets\Demo1\Script\Service\ScoreService.cs" />
@@ -291,6 +294,7 @@
     <Compile Include="Assets\StrangeIoC\scripts\strange\framework\impl\SemiBinding.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Demo1\Resources\AudioList.txt" />
     <None Include="Assets\StrangeIoC\LICENSE-2.0.txt" />
     <None Include="Assets\StrangeIoC\README.txt" />
     <None Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\ReadMe.txt" />

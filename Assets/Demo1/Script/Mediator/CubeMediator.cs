@@ -19,7 +19,6 @@ namespace Demo1
         [Inject(ContextKeys.CONTEXT_DISPATCHER)]
         public IEventDispatcher dispatcher { get; set; }
 
-
         //[Inject]
         //public ScoreModel scoreModel { get; set; }  //可以直接获取分数model来进行传值，但不建议这样做
 
